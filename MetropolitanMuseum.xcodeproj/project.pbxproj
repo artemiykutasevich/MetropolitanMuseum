@@ -13,6 +13,7 @@
 		EA77A5642C503FF300DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5632C503FF300DA9457 /* Base */; };
 		EA77A5662C503FF500DA9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5652C503FF500DA9457 /* Assets.xcassets */; };
 		EA77A5692C503FF500DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5682C503FF500DA9457 /* Base */; };
+		EA77A5762C50434900DA9457 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5752C50434900DA9457 /* LogService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA77A5652C503FF500DA9457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA77A5682C503FF500DA9457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA77A56A2C503FF500DA9457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA77A5752C50434900DA9457 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		EA77A5742C50407600DA9457 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EA77A5752C50434900DA9457 /* LogService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */,
 				EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */,
+				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
 				EA77A55F2C503FF300DA9457 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
