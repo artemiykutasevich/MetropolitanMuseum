@@ -56,15 +56,55 @@
 		EA77A55B2C503FF200DA9457 /* MetropolitanMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				EA77A5702C50404600DA9457 /* General */,
+				EA77A5742C50407600DA9457 /* Services */,
+				EA77A5732C50405D00DA9457 /* Modules */,
+				EA77A5722C50405600DA9457 /* Extensions */,
+				EA77A5712C50404E00DA9457 /* Support Files */,
+			);
+			path = MetropolitanMuseum;
+			sourceTree = "<group>";
+		};
+		EA77A5702C50404600DA9457 /* General */ = {
+			isa = PBXGroup;
+			children = (
 				EA77A55C2C503FF300DA9457 /* AppDelegate.swift */,
 				EA77A55E2C503FF300DA9457 /* SceneDelegate.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		EA77A5712C50404E00DA9457 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				EA77A5602C503FF300DA9457 /* ViewController.swift */,
 				EA77A5622C503FF300DA9457 /* Main.storyboard */,
 				EA77A5652C503FF500DA9457 /* Assets.xcassets */,
 				EA77A5672C503FF500DA9457 /* LaunchScreen.storyboard */,
 				EA77A56A2C503FF500DA9457 /* Info.plist */,
 			);
-			path = MetropolitanMuseum;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		EA77A5722C50405600DA9457 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA77A5732C50405D00DA9457 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EA77A5742C50407600DA9457 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -293,12 +333,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MetropolitanMuseum/Info.plist;
+				INFOPLIST_FILE = "MetropolitanMuseum/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,12 +361,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MetropolitanMuseum/Info.plist;
+				INFOPLIST_FILE = "MetropolitanMuseum/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
