@@ -24,7 +24,7 @@ final class ServiceLocator: ServiceLocatorProtocol {
     
     fileprivate lazy var registry: [String: RegistryRecord] = [:]
     
-    fileprivate lazy var className: String = String(describing: self)
+    fileprivate lazy var className: String = String(describing: ServiceLocator.self)
     
     func addService<T>(_ recipe: @escaping () -> T) {
         let key = getTypeName(T.self)

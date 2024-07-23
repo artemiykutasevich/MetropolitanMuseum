@@ -8,12 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private lazy var className: String = String(describing: ViewController.self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        LogService.debugLog("👀\t\(className): viewed")
     }
-
-
 }
-
