@@ -15,6 +15,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        LogService.debugLog("👀\t\(className): viewed")
+        LogService.debugLog("\(className): viewed", prefix: .viewed)
     }
 }

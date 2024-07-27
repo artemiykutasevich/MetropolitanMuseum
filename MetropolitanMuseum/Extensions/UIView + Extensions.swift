@@ -10,7 +10,7 @@ import UIKit
 // MARK: - @IBDesignable UIView
 
 @IBDesignable
-extension UIView {
+extension UIView: BaseClass {
     
     @IBInspectable
     var cornerRadius: CGFloat {

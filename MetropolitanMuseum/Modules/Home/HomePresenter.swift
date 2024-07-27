@@ -11,7 +11,9 @@ import UIKit
 
 protocol HomePresenterProtocol: AnyObject {
     var router: HomeRouterProtocol! { set get }
-    func configureView()
+    
+    func getEntitiesCount() -> Int
+    func updateCollectionView()
 }
 
 // MARK: - HomePresenter
@@ -30,5 +32,11 @@ final class HomePresenter: HomePresenterProtocol {
         self.view = view
     }
     
-    func configureView() {}
+    func getEntitiesCount() -> Int {
+        return interactor.models.count
+    }
+    
+    func updateCollectionView() {
+        view.collectionView.reloadData()
+    }
 }

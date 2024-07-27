@@ -18,6 +18,17 @@
 		EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA06D0A72C54E6540043138B /* HomeViewController.xib */; };
 		EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */; };
 		EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */; };
+		EA06D0B12C54F87D0043138B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0B02C54F87D0043138B /* WebService.swift */; };
+		EA06D0B52C54FA860043138B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0B42C54FA860043138B /* Reachability.swift */; };
+		EA06D0BB2C5501B40043138B /* InternetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0BA2C5501B40043138B /* InternetError.swift */; };
+		EA06D0BF2C5504E60043138B /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0BE2C5504E60043138B /* BaseClass.swift */; };
+		EA06D0C42C5523740043138B /* MuseumProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C32C5523740043138B /* MuseumProvider.swift */; };
+		EA06D0C72C5524AC0043138B /* MuseumObjectsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */; };
+		EA06D0C92C5524C80043138B /* MuseumObjectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */; };
+		EA06D0CC2C5525A80043138B /* MuseumObjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */; };
+		EA06D0D02C5526580043138B /* MuseumObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */; };
+		EA06D0D22C552B680043138B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0D12C552B680043138B /* Typealias.swift */; };
+		EA06D0D42C5533690043138B /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0D32C5533690043138B /* HomeEntity.swift */; };
 		EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A55C2C503FF300DA9457 /* AppDelegate.swift */; };
 		EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5602C503FF300DA9457 /* ViewController.swift */; };
 		EA77A5642C503FF300DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5632C503FF300DA9457 /* Base */; };
@@ -47,6 +58,17 @@
 		EA06D0A72C54E6540043138B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Extensions.swift"; sourceTree = "<group>"; };
 		EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0B02C54F87D0043138B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		EA06D0B42C54FA860043138B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EA06D0BA2C5501B40043138B /* InternetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetError.swift; sourceTree = "<group>"; };
+		EA06D0BE2C5504E60043138B /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		EA06D0C32C5523740043138B /* MuseumProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumProvider.swift; sourceTree = "<group>"; };
+		EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectsProvider.swift; sourceTree = "<group>"; };
+		EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectProvider.swift; sourceTree = "<group>"; };
+		EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectsModel.swift; sourceTree = "<group>"; };
+		EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectModel.swift; sourceTree = "<group>"; };
+		EA06D0D12C552B680043138B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		EA06D0D32C5533690043138B /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		EA77A5592C503FF200DA9457 /* MetropolitanMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetropolitanMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA77A55C2C503FF300DA9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA77A5602C503FF300DA9457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +137,96 @@
 			path = Placeholders;
 			sourceTree = "<group>";
 		};
+		EA06D0AE2C54F7EE0043138B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C22C55233A0043138B /* MeseumProvider */,
+				EA06D0C12C5521780043138B /* WebService */,
+				EA06D0B92C5501980043138B /* ErrorHandling */,
+				EA06D0C02C550E080043138B /* Logs */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA06D0B62C54FB630043138B /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */,
+				EA06D0BE2C5504E60043138B /* BaseClass.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		EA06D0B72C54FB7A0043138B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0952C543D060043138B /* NibBased.swift */,
+				EA06D0972C543D7A0043138B /* ReusableView.swift */,
+				EA06D0A12C54DFE70043138B /* ScaleFactor.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA06D0B82C54FB810043138B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0B42C54FA860043138B /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA06D0B92C5501980043138B /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0BA2C5501B40043138B /* InternetError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		EA06D0C02C550E080043138B /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				EA77A5752C50434900DA9457 /* LogService.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		EA06D0C12C5521780043138B /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0B02C54F87D0043138B /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		EA06D0C22C55233A0043138B /* MeseumProvider */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C32C5523740043138B /* MuseumProvider.swift */,
+				EA06D0CA2C55255B0043138B /* MuseumModels */,
+				EA06D0C52C5524270043138B /* Providers */,
+			);
+			path = MeseumProvider;
+			sourceTree = "<group>";
+		};
+		EA06D0C52C5524270043138B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */,
+				EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		EA06D0CA2C55255B0043138B /* MuseumModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */,
+				EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */,
+			);
+			path = MuseumModels;
+			sourceTree = "<group>";
+		};
 		EA77A5502C503FF200DA9457 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				EA77A55C2C503FF300DA9457 /* AppDelegate.swift */,
+				EA06D0D12C552B680043138B /* Typealias.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -188,8 +301,8 @@
 		EA77A5742C50407600DA9457 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				EA77A5752C50434900DA9457 /* LogService.swift */,
 				EA77A5772C504B9900DA9457 /* ServiceLocator.swift */,
+				EA06D0AE2C54F7EE0043138B /* Services */,
 				EA77A5792C504E8F00DA9457 /* Routers */,
 			);
 			path = Services;
@@ -209,6 +322,7 @@
 				EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */,
 				EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */,
 				EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */,
+				EA06D0D32C5533690043138B /* HomeEntity.swift */,
 				EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */,
 				EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */,
 				EA06D0A72C54E6540043138B /* HomeViewController.xib */,
@@ -235,7 +349,6 @@
 				EA77A5552C503FF200DA9457 /* Sources */,
 				EA77A5562C503FF200DA9457 /* Frameworks */,
 				EA77A5572C503FF200DA9457 /* Resources */,
-				5F901D657607B39AD8704B79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,23 +408,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F901D657607B39AD8704B79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		794FB43255CA7A480B6D8963 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,21 +440,32 @@
 				EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */,
 				EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */,
 				EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */,
+				EA06D0BB2C5501B40043138B /* InternetError.swift in Sources */,
 				EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */,
+				EA06D0C92C5524C80043138B /* MuseumObjectProvider.swift in Sources */,
 				EA06D0A22C54DFE70043138B /* ScaleFactor.swift in Sources */,
 				EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */,
 				EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */,
 				EA06D0982C543D7A0043138B /* ReusableView.swift in Sources */,
+				EA06D0D02C5526580043138B /* MuseumObjectModel.swift in Sources */,
 				EA06D0A42C54E0E70043138B /* BaseCollectionViewCell.swift in Sources */,
 				EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */,
+				EA06D0D42C5533690043138B /* HomeEntity.swift in Sources */,
+				EA06D0CC2C5525A80043138B /* MuseumObjectsModel.swift in Sources */,
 				EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */,
+				EA06D0D22C552B680043138B /* Typealias.swift in Sources */,
 				EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */,
 				EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */,
 				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
+				EA06D0B52C54FA860043138B /* Reachability.swift in Sources */,
 				EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */,
 				EA06D0962C543D060043138B /* NibBased.swift in Sources */,
+				EA06D0BF2C5504E60043138B /* BaseClass.swift in Sources */,
+				EA06D0C72C5524AC0043138B /* MuseumObjectsProvider.swift in Sources */,
 				EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */,
 				EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */,
+				EA06D0B12C54F87D0043138B /* WebService.swift in Sources */,
+				EA06D0C42C5523740043138B /* MuseumProvider.swift in Sources */,
 				EA06D09F2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

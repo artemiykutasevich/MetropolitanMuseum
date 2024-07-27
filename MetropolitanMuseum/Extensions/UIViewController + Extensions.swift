@@ -9,12 +9,7 @@ import UIKit
 
 // MARK: - UIViewController
 
-extension UIViewController {
-    
-    var className: String {
-        return String(describing: Self.self)
-    }
-    
+extension UIViewController: BaseClass {
     static func loadFromStoryboard<T>(storyboardName: String? = nil, viewControllerName: String? = nil, bundle: Bundle? = nil) -> T? {
         let storyboard = UIStoryboard(name: storyboardName ?? String(describing: self), bundle: bundle)
         return storyboard.instantiateViewController(identifier: viewControllerName ?? String(describing: self)) as? T

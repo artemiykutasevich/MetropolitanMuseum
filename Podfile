@@ -7,6 +7,4 @@ target 'MetropolitanMuseum' do
 
   # Pods for MetropolitanMuseum
   
-  # Utilities
-  pod 'Alamofire', '5.9.1'
 end

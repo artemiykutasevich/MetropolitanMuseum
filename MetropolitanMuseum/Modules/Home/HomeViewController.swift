@@ -30,12 +30,12 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureOutlets()
-        presenter.configureView()
+//        presenter.configureView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        LogService.debugLog("👀\t\(className): viewed")
+        LogService.debugLog("\(className): viewed", prefix: .viewed)
     }
     
     // Functions
@@ -52,7 +52,7 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return presenter.getEntitiesCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
