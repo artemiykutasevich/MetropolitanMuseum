@@ -7,9 +7,11 @@
 
 import UIKit
 
+// MARK: - ViewController
+
 class ViewController: UIViewController {
     
-    private lazy var className: String = String(describing: ViewController.self)
+    // override
     
     override func viewDidLoad() {
         super.viewDidLoad()

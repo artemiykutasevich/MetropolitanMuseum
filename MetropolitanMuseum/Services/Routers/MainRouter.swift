@@ -27,9 +27,8 @@ final class MainRouter {
 
 extension MainRouter: MainRouterProtocol {
     func showHomeScreen() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let mainViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
-        window.rootViewController = mainViewController
+        let homeViewController = HomeConfigurator.instantiate()
+        window.rootViewController = homeViewController
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
     }
 }

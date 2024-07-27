@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */; };
+		EA06D0962C543D060043138B /* NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0952C543D060043138B /* NibBased.swift */; };
+		EA06D0982C543D7A0043138B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0972C543D7A0043138B /* ReusableView.swift */; };
+		EA06D09F2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */; };
+		EA06D0A02C54DFAE0043138B /* PlaceholderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */; };
+		EA06D0A22C54DFE70043138B /* ScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0A12C54DFE70043138B /* ScaleFactor.swift */; };
+		EA06D0A42C54E0E70043138B /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */; };
+		EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA06D0A72C54E6540043138B /* HomeViewController.xib */; };
+		EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */; };
+		EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */; };
 		EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A55C2C503FF300DA9457 /* AppDelegate.swift */; };
 		EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5602C503FF300DA9457 /* ViewController.swift */; };
 		EA77A5642C503FF300DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5632C503FF300DA9457 /* Base */; };
@@ -15,9 +25,25 @@
 		EA77A5762C50434900DA9457 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5752C50434900DA9457 /* LogService.swift */; };
 		EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5772C504B9900DA9457 /* ServiceLocator.swift */; };
 		EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A57A2C504ED500DA9457 /* MainRouter.swift */; };
+		EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */; };
+		EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */; };
+		EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */; };
+		EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */; };
+		EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */; };
+		EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0952C543D060043138B /* NibBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBased.swift; sourceTree = "<group>"; };
+		EA06D0972C543D7A0043138B /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA06D0A12C54DFE70043138B /* ScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleFactor.swift; sourceTree = "<group>"; };
+		EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA06D0A72C54E6540043138B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		EA77A5592C503FF200DA9457 /* MetropolitanMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetropolitanMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA77A55C2C503FF300DA9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA77A5602C503FF300DA9457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +54,12 @@
 		EA77A5752C50434900DA9457 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		EA77A5772C504B9900DA9457 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		EA77A57A2C504ED500DA9457 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +73,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA06D0942C543BD70043138B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */,
+				EA06D0952C543D060043138B /* NibBased.swift */,
+				EA06D0972C543D7A0043138B /* ReusableView.swift */,
+				EA06D0A12C54DFE70043138B /* ScaleFactor.swift */,
+				EA06D0A92C54E9930043138B /* Placeholders */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EA06D09C2C54DF750043138B /* PlaceholderCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */,
+				EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */,
+			);
+			path = PlaceholderCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EA06D0A92C54E9930043138B /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D09C2C54DF750043138B /* PlaceholderCollectionViewCell */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
 		EA77A5502C503FF200DA9457 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +124,7 @@
 				EA77A5702C50404600DA9457 /* General */,
 				EA77A5742C50407600DA9457 /* Services */,
 				EA77A5732C50405D00DA9457 /* Modules */,
+				EA06D0942C543BD70043138B /* Utilities */,
 				EA77A5722C50405600DA9457 /* Extensions */,
 				EA77A5712C50404E00DA9457 /* Support Files */,
 			);
@@ -92,6 +154,10 @@
 		EA77A5722C50405600DA9457 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */,
+				EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */,
+				EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */,
+				EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -99,6 +165,7 @@
 		EA77A5732C50405D00DA9457 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EAB6BF6A2C52DBE5000DE825 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -119,6 +186,19 @@
 				EA77A57A2C504ED500DA9457 /* MainRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		EAB6BF6A2C52DBE5000DE825 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */,
+				EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */,
+				EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */,
+				EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */,
+				EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */,
+				EA06D0A72C54E6540043138B /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +261,8 @@
 			files = (
 				EA77A5662C503FF500DA9457 /* Assets.xcassets in Resources */,
 				EA77A5692C503FF500DA9457 /* Base in Resources */,
+				EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */,
+				EA06D0A02C54DFAE0043138B /* PlaceholderCollectionViewCell.xib in Resources */,
 				EA77A5642C503FF300DA9457 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,9 +276,23 @@
 			files = (
 				EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */,
 				EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */,
+				EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */,
+				EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */,
+				EA06D0A22C54DFE70043138B /* ScaleFactor.swift in Sources */,
+				EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */,
+				EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */,
+				EA06D0982C543D7A0043138B /* ReusableView.swift in Sources */,
+				EA06D0A42C54E0E70043138B /* BaseCollectionViewCell.swift in Sources */,
 				EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */,
+				EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */,
+				EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */,
+				EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */,
 				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
 				EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */,
+				EA06D0962C543D060043138B /* NibBased.swift in Sources */,
+				EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */,
+				EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */,
+				EA06D09F2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
