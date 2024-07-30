@@ -23,6 +23,73 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
     
     // Properties
     
+    private lazy var collectionViewLayout: UICollectionViewCompositionalLayout = {
+        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex, _) -> NSCollectionLayoutSection? in
+            guard let self else { return nil }
+            
+            // Items
+            
+            let cellWidth: CGFloat = (collectionView.frame.width - Defaults.sectionLeftInsert - Defaults.sectionRightInsert - (Defaults.spaceBetweenItems * (Defaults.itemsInRow - 1).toCGFloat())) / Defaults.itemsInRow.toCGFloat()
+            let cellHeight: CGFloat = cellWidth
+            
+            let itemSize = NSCollectionLayoutSize(
+                widthDimension: .absolute(cellWidth),
+                heightDimension: .absolute(cellHeight)
+            )
+            
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            // Group
+            
+            let groupSize = NSCollectionLayoutSize(
+                widthDimension: .estimated(1.0),
+                heightDimension: .estimated(1.0)
+            )
+            
+            let group = NSCollectionLayoutGroup.horizontal(
+                layoutSize: groupSize,
+                subitems: [item]
+            )
+            
+            group.interItemSpacing = .fixed(Defaults.spaceBetweenItems)
+            
+            // Header
+            
+            let headerHeight: CGFloat = Defaults.headerHeight
+            let headerSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .absolute(headerHeight)
+            )
+            
+            let header = NSCollectionLayoutBoundarySupplementaryItem(
+                layoutSize: headerSize,
+                elementKind: UICollectionView.elementKindSectionHeader,
+                alignment: .top
+            )
+            
+            // Section
+            
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            section.interGroupSpacing = Defaults.spaceBetweenItems
+            section.contentInsets = NSDirectionalEdgeInsets(
+                top: Defaults.spaceBetweenHeaderAndItems,
+                leading: Defaults.sectionLeftInsert,
+                bottom: Defaults.spaceBetweenFooterAndItems,
+                trailing: Defaults.sectionRightInsert
+            )
+            
+            section.boundarySupplementaryItems = [header]
+            return section
+        }
+        
+        let configuration = UICollectionViewCompositionalLayoutConfiguration()
+        configuration.interSectionSpacing = Defaults.spaceBetweenItems
+        
+        layout.configuration = configuration
+        return layout
+    }()
+    
     var presenter: HomePresenterProtocol!
     
     // override
@@ -30,7 +97,8 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureOutlets()
-//        presenter.configureView()
+        configureNavigationBar()
+        presenter.configureView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,23 +109,48 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
     // Functions
     
     private func configureOutlets() {
+        collectionView.collectionViewLayout = collectionViewLayout
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        collectionView.registerHeader(HomeHeaderReusableView.self)
         collectionView.register(PlaceholderCollectionViewCell.self)
+    }
+    
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = Defaults.titleText
     }
 }
 
 // MARK: - UICollectionViewDataSource
 
 extension HomeViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return presenter.getSectionsCount()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.getEntitiesCount()
+        return presenter.getItemsCountFor(for: section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: PlaceholderCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let header: HomeHeaderReusableView = collectionView.dequeueHeader(forIndexPath: indexPath)
+            let sectionName: String = presenter.getSectionName(for: indexPath.section)
+            header.configure(titleText: sectionName)
+            return header
+        case UICollectionView.elementKindSectionFooter:
+            return UICollectionReusableView()
+        default:
+            return UICollectionReusableView()
+        }
     }
 }
 
@@ -65,30 +158,21 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {}
 
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (collectionView.frame.width - Defaults.sectionEdgeInsert.left - Defaults.sectionEdgeInsert.right - (Defaults.spaceBetweenItems * (Defaults.itemsInRow - 1).toCGFloat())) / Defaults.itemsInRow.toCGFloat()
-        let height: CGFloat = width
-        return CGSize(width: width, height: height)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return Defaults.spaceBetweenItems
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return Defaults.sectionEdgeInsert
-    }
-}
-
 // MARK: - Defaults
 
 fileprivate extension HomeViewController {
     enum Defaults {
+        static let titleText: String = "Departments"
+        
         static let itemsInRow: Int = 3
         static let spaceBetweenItems: CGFloat = 10.0
-        static let sectionEdgeInsert: UIEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        
+        static let sectionLeftInsert: CGFloat = 10.0
+        static let sectionRightInsert: CGFloat = 10.0
+        
+        static let spaceBetweenHeaderAndItems: CGFloat = 4.0
+        static let spaceBetweenFooterAndItems: CGFloat = 20.0
+        
+        static let headerHeight: CGFloat = 22.0
     }
 }

@@ -30,6 +30,7 @@ fileprivate extension AppDelegate {
     func setupServices() {
         guard let window else { return }
         serviceLocator.addService { MainRouter(window: window) as MainRouterProtocol }
+        serviceLocator.addService { AlertRouter() as AlertRouterProtocol }
         serviceLocator.addService { WebService() as WebServiceProtocol }
         serviceLocator.addService { MuseumProvider() as MuseumProviderProtocol }
     }

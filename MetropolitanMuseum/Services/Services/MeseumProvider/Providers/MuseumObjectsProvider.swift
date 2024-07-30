@@ -10,14 +10,19 @@ import Foundation
 // MARK: - MuseumObjectsProviderProtocol
 
 protocol MuseumObjectsProviderProtocol: AnyObject {
-    func getObjects(completion: @escaping MuseumObjectsModelResultBlock)
+    func getObjects(_ departmentId: Int?, completion: @escaping MuseumObjectsModelResultBlock)
 }
 
 // MARK: - MuseumProvider + MuseumObjectsProviderProtocol
 
 extension MuseumProvider: MuseumObjectsProviderProtocol {
-    func getObjects(completion: @escaping MuseumObjectsModelResultBlock) {
-        let string = "https://collectionapi.metmuseum.org/public/collection/v1/objects"
+    func getObjects(_ departmentId: Int? = nil, completion: @escaping MuseumObjectsModelResultBlock) {
+        let string: String = if let departmentId {
+            "https://collectionapi.metmuseum.org/public/collection/v1/objects?metadataDate=\(metadataDate)&departmentIds=\(departmentId)"
+        } else {
+            "https://collectionapi.metmuseum.org/public/collection/v1/objectsmetadataDate=\(metadataDate)"
+        }
+        
         guard let url = URL(string: string) else {
             return completion(.failure(.incorrectURL))
         }

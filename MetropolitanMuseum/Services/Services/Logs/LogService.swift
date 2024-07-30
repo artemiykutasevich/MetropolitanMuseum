@@ -27,6 +27,8 @@ final class LogService {
 
 extension LogService {
     enum Prefix {
+        case success
+        case failure
         case web
         case viewed
         case `default`
@@ -39,6 +41,10 @@ extension LogService {
                 return "👀"
             case .default:
                 return "📌"
+            case .success:
+                return "✅"
+            case .failure:
+                return "⛔️"
             }
         }
     }

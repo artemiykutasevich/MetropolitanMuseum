@@ -12,14 +12,16 @@ import UIKit
 protocol HomePresenterProtocol: AnyObject {
     var router: HomeRouterProtocol! { set get }
     
-    func getEntitiesCount() -> Int
-    func updateCollectionView()
+    func configureView()
+    
+    func getSectionsCount() -> Int
+    func getSectionName(for section: Int) -> String
+    func getItemsCountFor(for section: Int) -> Int
 }
 
 // MARK: - HomePresenter
 
-final class HomePresenter: HomePresenterProtocol {
-    
+final class HomePresenter: BaseClass {
     // Properties
     
     weak var view: HomeViewProtocol!
@@ -31,12 +33,29 @@ final class HomePresenter: HomePresenterProtocol {
     required init(view: HomeViewProtocol) {
         self.view = view
     }
-    
-    func getEntitiesCount() -> Int {
-        return interactor.models.count
+}
+
+// MARK: - HomePresenterProtocol
+
+extension HomePresenter: HomePresenterProtocol {
+    func configureView() {
+        interactor.loadData(completion: { [weak self] in
+            guard let self else { return }
+            DispatchQueue.main.async {
+                self.view.collectionView.reloadData()
+            }
+        })
     }
     
-    func updateCollectionView() {
-        view.collectionView.reloadData()
+    func getSectionsCount() -> Int {
+        return interactor.objects.count
+    }
+    
+    func getSectionName(for section: Int) -> String {
+        return interactor.objects[section].department.name
+    }
+    
+    func getItemsCountFor(for section: Int) -> Int {
+        return interactor.objects[section].objects.count
     }
 }

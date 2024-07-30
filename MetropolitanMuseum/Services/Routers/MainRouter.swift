@@ -23,12 +23,12 @@ final class MainRouter {
     }
 }
 
-// MARK: MainRouterProtocol
+// MARK: - MainRouterProtocol
 
 extension MainRouter: MainRouterProtocol {
     func showHomeScreen() {
         let homeViewController = HomeConfigurator.instantiate()
-        window.rootViewController = homeViewController
+        window.rootViewController = UINavigationController(rootViewController: homeViewController)
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
     }
 }
