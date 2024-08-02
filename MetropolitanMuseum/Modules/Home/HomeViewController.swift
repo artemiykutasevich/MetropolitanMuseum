@@ -42,8 +42,8 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
             // Group
             
             let groupSize = NSCollectionLayoutSize(
-                widthDimension: .estimated(1.0),
-                heightDimension: .estimated(1.0)
+                widthDimension: .absolute(cellWidth),
+                heightDimension: .absolute(cellHeight)
             )
             
             let group = NSCollectionLayoutGroup.horizontal(
@@ -114,7 +114,7 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
         collectionView.delegate = self
         
         collectionView.registerHeader(HomeHeaderReusableView.self)
-        collectionView.register(PlaceholderCollectionViewCell.self)
+        collectionView.register(HomeCollectionViewCell.self)
     }
     
     private func configureNavigationBar() {
@@ -135,8 +135,19 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PlaceholderCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+        let cell: HomeCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let cell = cell as? HomeCollectionViewCell else { return }
+        let model: MuseumObjectModel = presenter.getItems(for: indexPath)
+        cell.configure(with: model)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let cell = cell as? HomeCollectionViewCell else { return }
+        cell.configureEmpty()
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

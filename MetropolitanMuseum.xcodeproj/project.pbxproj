@@ -44,6 +44,9 @@
 		EA8895492C558A920032CF1D /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */; };
 		EA88954A2C558A920032CF1D /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8895472C558A920032CF1D /* HomeHeaderReusableView.swift */; };
 		EA88954C2C558BD20032CF1D /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88954B2C558BD20032CF1D /* BaseCollectionReusableView.swift */; };
+		EAB6812F2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */; };
+		EAB681302C5D4B5300F1CC6B /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */; };
+		EAB681332C5D4F6900F1CC6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB681322C5D4F6900F1CC6B /* Constants.swift */; };
 		EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */; };
 		EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */; };
 		EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */; };
@@ -93,6 +96,9 @@
 		EA8895472C558A920032CF1D /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
 		EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
 		EA88954B2C558BD20032CF1D /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		EAB681322C5D4F6900F1CC6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -289,6 +295,7 @@
 			children = (
 				EA77A55C2C503FF300DA9457 /* AppDelegate.swift */,
 				EA06D0D12C552B680043138B /* Typealias.swift */,
+				EAB681322C5D4F6900F1CC6B /* Constants.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -353,9 +360,19 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		EAB6812C2C5D4B3000F1CC6B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */,
+				EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EAB6BF6A2C52DBE5000DE825 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EAB6812C2C5D4B3000F1CC6B /* Cell */,
 				EA8895422C558A180032CF1D /* Header */,
 				EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */,
 				EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */,
@@ -386,6 +403,7 @@
 				EA77A5552C503FF200DA9457 /* Sources */,
 				EA77A5562C503FF200DA9457 /* Frameworks */,
 				EA77A5572C503FF200DA9457 /* Resources */,
+				8C740DF18C5FD6921EAA1265 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +456,7 @@
 				EA8895492C558A920032CF1D /* HomeHeaderReusableView.xib in Resources */,
 				EA77A5692C503FF500DA9457 /* Base in Resources */,
 				EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */,
+				EAB681302C5D4B5300F1CC6B /* HomeCollectionViewCell.xib in Resources */,
 				EA06D0A02C54DFAE0043138B /* PlaceholderCollectionViewCell.xib in Resources */,
 				EA77A5642C503FF300DA9457 /* Base in Resources */,
 			);
@@ -468,6 +487,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C740DF18C5FD6921EAA1265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -476,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA88954A2C558A920032CF1D /* HomeHeaderReusableView.swift in Sources */,
+				EAB681332C5D4F6900F1CC6B /* Constants.swift in Sources */,
 				EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */,
 				EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */,
 				EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */,
@@ -499,6 +536,7 @@
 				EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */,
 				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
 				EA06D0B52C54FA860043138B /* Reachability.swift in Sources */,
+				EAB6812F2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift in Sources */,
 				EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */,
 				EA06D0962C543D060043138B /* NibBased.swift in Sources */,
 				EA06D0BF2C5504E60043138B /* BaseClass.swift in Sources */,

@@ -16,7 +16,7 @@ struct MuseumObjectModel: Decodable {
 //    let accessionYear: String
 //    let isPublicDomain: Bool
 //    let primaryImage: String
-//    let primaryImageSmall: String
+    let primaryImageSmall: String
 //    let additionalImages: [String]
 //    let constituents: [String: Any]
 //    let department: String

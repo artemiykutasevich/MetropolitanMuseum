@@ -6,5 +6,5 @@ target 'MetropolitanMuseum' do
   use_frameworks!
 
   # Pods for MetropolitanMuseum
-  
+  pod 'Kingfisher', '~> 7.0'
 end

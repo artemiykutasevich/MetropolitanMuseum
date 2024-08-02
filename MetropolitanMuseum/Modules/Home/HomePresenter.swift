@@ -17,11 +17,13 @@ protocol HomePresenterProtocol: AnyObject {
     func getSectionsCount() -> Int
     func getSectionName(for section: Int) -> String
     func getItemsCountFor(for section: Int) -> Int
+    func getItems(for indexPath: IndexPath) -> MuseumObjectModel
 }
 
 // MARK: - HomePresenter
 
 final class HomePresenter: BaseClass {
+    
     // Properties
     
     weak var view: HomeViewProtocol!
@@ -52,10 +54,15 @@ extension HomePresenter: HomePresenterProtocol {
     }
     
     func getSectionName(for section: Int) -> String {
-        return interactor.objects[section].department.name
+        let object = interactor.objects[section]
+        return "\(object.department.name) (\(object.objects.count))"
     }
     
     func getItemsCountFor(for section: Int) -> Int {
         return interactor.objects[section].objects.count
+    }
+    
+    func getItems(for indexPath: IndexPath) -> MuseumObjectModel {
+        return interactor.objects[indexPath.section].objects[indexPath.row]
     }
 }
