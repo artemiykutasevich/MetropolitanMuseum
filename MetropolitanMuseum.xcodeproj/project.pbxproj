@@ -7,23 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B089B2A19543CD9955D4214A /* Pods_MetropolitanMuseum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F814E6B4450842082E3927F4 /* Pods_MetropolitanMuseum.framework */; };
+		EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */; };
+		EA06D0962C543D060043138B /* NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0952C543D060043138B /* NibBased.swift */; };
+		EA06D0982C543D7A0043138B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0972C543D7A0043138B /* ReusableView.swift */; };
+		EA06D09F2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */; };
+		EA06D0A02C54DFAE0043138B /* PlaceholderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */; };
+		EA06D0A22C54DFE70043138B /* ScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0A12C54DFE70043138B /* ScaleFactor.swift */; };
+		EA06D0A42C54E0E70043138B /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */; };
+		EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA06D0A72C54E6540043138B /* HomeViewController.xib */; };
+		EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */; };
+		EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */; };
+		EA06D0B12C54F87D0043138B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0B02C54F87D0043138B /* WebService.swift */; };
+		EA06D0B52C54FA860043138B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0B42C54FA860043138B /* Reachability.swift */; };
+		EA06D0BB2C5501B40043138B /* InternetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0BA2C5501B40043138B /* InternetError.swift */; };
+		EA06D0BF2C5504E60043138B /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0BE2C5504E60043138B /* BaseClass.swift */; };
+		EA06D0C42C5523740043138B /* MuseumProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C32C5523740043138B /* MuseumProvider.swift */; };
+		EA06D0C72C5524AC0043138B /* MuseumObjectsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */; };
+		EA06D0C92C5524C80043138B /* MuseumObjectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */; };
+		EA06D0CC2C5525A80043138B /* MuseumObjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */; };
+		EA06D0D02C5526580043138B /* MuseumObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */; };
+		EA06D0D22C552B680043138B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06D0D12C552B680043138B /* Typealias.swift */; };
+		EA0AD7452C5979A300EC68FD /* MuseumItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD7442C5979A300EC68FD /* MuseumItem.swift */; };
+		EA0AD7472C59825F00EC68FD /* AlertRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD7462C59825F00EC68FD /* AlertRouter.swift */; };
+		EA0AD7492C598CC200EC68FD /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD7482C598CC200EC68FD /* Date + Extensions.swift */; };
 		EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A55C2C503FF300DA9457 /* AppDelegate.swift */; };
-		EA77A55F2C503FF300DA9457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A55E2C503FF300DA9457 /* SceneDelegate.swift */; };
 		EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5602C503FF300DA9457 /* ViewController.swift */; };
 		EA77A5642C503FF300DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5632C503FF300DA9457 /* Base */; };
 		EA77A5662C503FF500DA9457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5652C503FF500DA9457 /* Assets.xcassets */; };
 		EA77A5692C503FF500DA9457 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA77A5682C503FF500DA9457 /* Base */; };
+		EA77A5762C50434900DA9457 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5752C50434900DA9457 /* LogService.swift */; };
+		EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A5772C504B9900DA9457 /* ServiceLocator.swift */; };
+		EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A57A2C504ED500DA9457 /* MainRouter.swift */; };
+		EA88953A2C556FBD0032CF1D /* MuseumDepartamentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8895392C556FBD0032CF1D /* MuseumDepartamentProvider.swift */; };
+		EA88953C2C556FCE0032CF1D /* MuseumDepartamentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88953B2C556FCE0032CF1D /* MuseumDepartamentModel.swift */; };
+		EA8895492C558A920032CF1D /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */; };
+		EA88954A2C558A920032CF1D /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8895472C558A920032CF1D /* HomeHeaderReusableView.swift */; };
+		EA88954C2C558BD20032CF1D /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88954B2C558BD20032CF1D /* BaseCollectionReusableView.swift */; };
+		EAB6812F2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */; };
+		EAB681302C5D4B5300F1CC6B /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */; };
+		EAB681332C5D4F6900F1CC6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB681322C5D4F6900F1CC6B /* Constants.swift */; };
+		EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */; };
+		EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */; };
+		EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */; };
+		EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */; };
+		EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */; };
+		EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */; };
+		EAD1E35E2C5FBFEB00107923 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */; };
+		EAD1E35F2C5FBFEB00107923 /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */; };
+		EAD1E3602C5FBFEB00107923 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */; };
+		EAD1E3612C5FBFEB00107923 /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */; };
+		EAD1E3622C5FBFEB00107923 /* HomeDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */; };
+		EAD1E3642C5FC07900107923 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */; };
+		EAD1E3682C5FDC2700107923 /* TimeInterval + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12AA4293602FD32BED615CB8 /* Pods-MetropolitanMuseum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolitanMuseum.debug.xcconfig"; path = "Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA5F980AA540D7664ACEA94 /* Pods-MetropolitanMuseum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolitanMuseum.release.xcconfig"; path = "Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum.release.xcconfig"; sourceTree = "<group>"; };
+		EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0952C543D060043138B /* NibBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBased.swift; sourceTree = "<group>"; };
+		EA06D0972C543D7A0043138B /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA06D0A12C54DFE70043138B /* ScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleFactor.swift; sourceTree = "<group>"; };
+		EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA06D0A72C54E6540043138B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		EA06D0B02C54F87D0043138B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		EA06D0B42C54FA860043138B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EA06D0BA2C5501B40043138B /* InternetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetError.swift; sourceTree = "<group>"; };
+		EA06D0BE2C5504E60043138B /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		EA06D0C32C5523740043138B /* MuseumProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumProvider.swift; sourceTree = "<group>"; };
+		EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectsProvider.swift; sourceTree = "<group>"; };
+		EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectProvider.swift; sourceTree = "<group>"; };
+		EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectsModel.swift; sourceTree = "<group>"; };
+		EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumObjectModel.swift; sourceTree = "<group>"; };
+		EA06D0D12C552B680043138B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		EA0AD7442C5979A300EC68FD /* MuseumItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItem.swift; sourceTree = "<group>"; };
+		EA0AD7462C59825F00EC68FD /* AlertRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRouter.swift; sourceTree = "<group>"; };
+		EA0AD7482C598CC200EC68FD /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
 		EA77A5592C503FF200DA9457 /* MetropolitanMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetropolitanMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA77A55C2C503FF300DA9457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA77A55E2C503FF300DA9457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA77A5602C503FF300DA9457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA77A5632C503FF300DA9457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA77A5652C503FF500DA9457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA77A5682C503FF500DA9457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA77A56A2C503FF500DA9457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA77A5752C50434900DA9457 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		EA77A5772C504B9900DA9457 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		EA77A57A2C504ED500DA9457 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		EA8895392C556FBD0032CF1D /* MuseumDepartamentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDepartamentProvider.swift; sourceTree = "<group>"; };
+		EA88953B2C556FCE0032CF1D /* MuseumDepartamentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDepartamentModel.swift; sourceTree = "<group>"; };
+		EA8895472C558A920032CF1D /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
+		EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
+		EA88954B2C558BD20032CF1D /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		EAB681322C5D4F6900F1CC6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailConfigurator.swift; sourceTree = "<group>"; };
+		EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval + Extensions.swift"; sourceTree = "<group>"; };
+		F814E6B4450842082E3927F4 /* Pods_MetropolitanMuseum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolitanMuseum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +127,158 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B089B2A19543CD9955D4214A /* Pods_MetropolitanMuseum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		565251C258228EDBC2A38C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12AA4293602FD32BED615CB8 /* Pods-MetropolitanMuseum.debug.xcconfig */,
+				5AA5F980AA540D7664ACEA94 /* Pods-MetropolitanMuseum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA06D0942C543BD70043138B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0B62C54FB630043138B /* BaseComponents */,
+				EA06D0B82C54FB810043138B /* Network */,
+				EA06D0A92C54E9930043138B /* Placeholders */,
+				EA06D0B72C54FB7A0043138B /* UI */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EA06D09C2C54DF750043138B /* PlaceholderCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D09D2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift */,
+				EA06D09E2C54DFAE0043138B /* PlaceholderCollectionViewCell.xib */,
+			);
+			path = PlaceholderCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EA06D0A92C54E9930043138B /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D09C2C54DF750043138B /* PlaceholderCollectionViewCell */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
+		EA06D0AE2C54F7EE0043138B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C22C55233A0043138B /* MeseumProvider */,
+				EA06D0C12C5521780043138B /* WebService */,
+				EA06D0B92C5501980043138B /* ErrorHandling */,
+				EA06D0C02C550E080043138B /* Logs */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA06D0B62C54FB630043138B /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0BE2C5504E60043138B /* BaseClass.swift */,
+				EA88954B2C558BD20032CF1D /* BaseCollectionReusableView.swift */,
+				EA06D0A32C54E0E70043138B /* BaseCollectionViewCell.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		EA06D0B72C54FB7A0043138B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0952C543D060043138B /* NibBased.swift */,
+				EA06D0972C543D7A0043138B /* ReusableView.swift */,
+				EA06D0A12C54DFE70043138B /* ScaleFactor.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA06D0B82C54FB810043138B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0B42C54FA860043138B /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA06D0B92C5501980043138B /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0BA2C5501B40043138B /* InternetError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		EA06D0C02C550E080043138B /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				EA77A5752C50434900DA9457 /* LogService.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		EA06D0C12C5521780043138B /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0B02C54F87D0043138B /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		EA06D0C22C55233A0043138B /* MeseumProvider */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C32C5523740043138B /* MuseumProvider.swift */,
+				EA06D0CA2C55255B0043138B /* MuseumModels */,
+				EA06D0C52C5524270043138B /* Providers */,
+			);
+			path = MeseumProvider;
+			sourceTree = "<group>";
+		};
+		EA06D0C52C5524270043138B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0C82C5524C80043138B /* MuseumObjectProvider.swift */,
+				EA06D0C62C5524AC0043138B /* MuseumObjectsProvider.swift */,
+				EA8895392C556FBD0032CF1D /* MuseumDepartamentProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		EA06D0CA2C55255B0043138B /* MuseumModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */,
+				EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */,
+				EA88953B2C556FCE0032CF1D /* MuseumDepartamentModel.swift */,
+			);
+			path = MuseumModels;
+			sourceTree = "<group>";
+		};
+		EA0AD7432C5976C800EC68FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD7442C5979A300EC68FD /* MuseumItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EA77A5502C503FF200DA9457 = {
 			isa = PBXGroup;
 			children = (
 				EA77A55B2C503FF200DA9457 /* MetropolitanMuseum */,
 				EA77A55A2C503FF200DA9457 /* Products */,
+				565251C258228EDBC2A38C74 /* Pods */,
+				EBDC5D009BF333298CD1BC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +293,132 @@
 		EA77A55B2C503FF200DA9457 /* MetropolitanMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				EA77A5702C50404600DA9457 /* General */,
+				EA77A5742C50407600DA9457 /* Services */,
+				EA0AD7432C5976C800EC68FD /* Models */,
+				EA77A5732C50405D00DA9457 /* Modules */,
+				EA06D0942C543BD70043138B /* Utilities */,
+				EA77A5722C50405600DA9457 /* Extensions */,
+				EA77A5712C50404E00DA9457 /* Support Files */,
+			);
+			path = MetropolitanMuseum;
+			sourceTree = "<group>";
+		};
+		EA77A5702C50404600DA9457 /* General */ = {
+			isa = PBXGroup;
+			children = (
 				EA77A55C2C503FF300DA9457 /* AppDelegate.swift */,
-				EA77A55E2C503FF300DA9457 /* SceneDelegate.swift */,
+				EA06D0D12C552B680043138B /* Typealias.swift */,
+				EAB681322C5D4F6900F1CC6B /* Constants.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		EA77A5712C50404E00DA9457 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				EA77A5602C503FF300DA9457 /* ViewController.swift */,
 				EA77A5622C503FF300DA9457 /* Main.storyboard */,
 				EA77A5652C503FF500DA9457 /* Assets.xcassets */,
 				EA77A5672C503FF500DA9457 /* LaunchScreen.storyboard */,
 				EA77A56A2C503FF500DA9457 /* Info.plist */,
 			);
-			path = MetropolitanMuseum;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		EA77A5722C50405600DA9457 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD7482C598CC200EC68FD /* Date + Extensions.swift */,
+				EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */,
+				EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */,
+				EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */,
+				EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */,
+				EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA77A5732C50405D00DA9457 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E22A32C5D7A540023F17B /* HomeDetail */,
+				EAB6BF6A2C52DBE5000DE825 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EA77A5742C50407600DA9457 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA77A5772C504B9900DA9457 /* ServiceLocator.swift */,
+				EA06D0AE2C54F7EE0043138B /* Services */,
+				EA77A5792C504E8F00DA9457 /* Routers */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA77A5792C504E8F00DA9457 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				EA77A57A2C504ED500DA9457 /* MainRouter.swift */,
+				EA0AD7462C59825F00EC68FD /* AlertRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		EA8895422C558A180032CF1D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EA8895472C558A920032CF1D /* HomeHeaderReusableView.swift */,
+				EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EA9E22A32C5D7A540023F17B /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */,
+				EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */,
+				EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */,
+				EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */,
+				EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */,
+				EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		EAB6812C2C5D4B3000F1CC6B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6812D2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift */,
+				EAB6812E2C5D4B5300F1CC6B /* HomeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EAB6BF6A2C52DBE5000DE825 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6812C2C5D4B3000F1CC6B /* Cell */,
+				EA8895422C558A180032CF1D /* Header */,
+				EAB6BF6B2C52EAA0000DE825 /* HomeConfigurator.swift */,
+				EAB6BF6D2C52EABB000DE825 /* HomeInteractor.swift */,
+				EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */,
+				EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */,
+				EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */,
+				EA06D0A72C54E6540043138B /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBDC5D009BF333298CD1BC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F814E6B4450842082E3927F4 /* Pods_MetropolitanMuseum.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +428,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA77A56D2C503FF500DA9457 /* Build configuration list for PBXNativeTarget "MetropolitanMuseum" */;
 			buildPhases = (
+				794FB43255CA7A480B6D8963 /* [CP] Check Pods Manifest.lock */,
 				EA77A5552C503FF200DA9457 /* Sources */,
 				EA77A5562C503FF200DA9457 /* Frameworks */,
 				EA77A5572C503FF200DA9457 /* Resources */,
+				8C740DF18C5FD6921EAA1265 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +481,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD1E3642C5FC07900107923 /* HomeDetailViewController.xib in Resources */,
 				EA77A5662C503FF500DA9457 /* Assets.xcassets in Resources */,
+				EA8895492C558A920032CF1D /* HomeHeaderReusableView.xib in Resources */,
 				EA77A5692C503FF500DA9457 /* Base in Resources */,
+				EA06D0A82C54E6540043138B /* HomeViewController.xib in Resources */,
+				EAB681302C5D4B5300F1CC6B /* HomeCollectionViewCell.xib in Resources */,
+				EA06D0A02C54DFAE0043138B /* PlaceholderCollectionViewCell.xib in Resources */,
 				EA77A5642C503FF300DA9457 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		794FB43255CA7A480B6D8963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetropolitanMuseum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C740DF18C5FD6921EAA1265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetropolitanMuseum/Pods-MetropolitanMuseum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA77A5552C503FF200DA9457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA88954A2C558A920032CF1D /* HomeHeaderReusableView.swift in Sources */,
+				EAB681332C5D4F6900F1CC6B /* Constants.swift in Sources */,
 				EA77A5612C503FF300DA9457 /* ViewController.swift in Sources */,
+				EA77A5782C504B9900DA9457 /* ServiceLocator.swift in Sources */,
+				EA06D0922C543B3F0043138B /* UICollectionView + Extensions.swift in Sources */,
+				EA88953A2C556FBD0032CF1D /* MuseumDepartamentProvider.swift in Sources */,
+				EA06D0BB2C5501B40043138B /* InternetError.swift in Sources */,
+				EA06D0AB2C54EBBE0043138B /* Int + Extensions.swift in Sources */,
+				EA06D0C92C5524C80043138B /* MuseumObjectProvider.swift in Sources */,
+				EA06D0A22C54DFE70043138B /* ScaleFactor.swift in Sources */,
+				EAB6BF692C52DA88000DE825 /* UIViewController + Extensions.swift in Sources */,
+				EAB6BF6E2C52EABB000DE825 /* HomeInteractor.swift in Sources */,
+				EA06D0982C543D7A0043138B /* ReusableView.swift in Sources */,
+				EA0AD7472C59825F00EC68FD /* AlertRouter.swift in Sources */,
+				EA06D0D02C5526580043138B /* MuseumObjectModel.swift in Sources */,
+				EA06D0A42C54E0E70043138B /* BaseCollectionViewCell.swift in Sources */,
 				EA77A55D2C503FF300DA9457 /* AppDelegate.swift in Sources */,
-				EA77A55F2C503FF300DA9457 /* SceneDelegate.swift in Sources */,
+				EA06D0CC2C5525A80043138B /* MuseumObjectsModel.swift in Sources */,
+				EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */,
+				EA06D0D22C552B680043138B /* Typealias.swift in Sources */,
+				EA0AD7492C598CC200EC68FD /* Date + Extensions.swift in Sources */,
+				EAD1E3682C5FDC2700107923 /* TimeInterval + Extensions.swift in Sources */,
+				EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */,
+				EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */,
+				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
+				EA06D0B52C54FA860043138B /* Reachability.swift in Sources */,
+				EAB6812F2C5D4B5300F1CC6B /* HomeCollectionViewCell.swift in Sources */,
+				EA77A57B2C504ED500DA9457 /* MainRouter.swift in Sources */,
+				EA06D0962C543D060043138B /* NibBased.swift in Sources */,
+				EA06D0BF2C5504E60043138B /* BaseClass.swift in Sources */,
+				EA0AD7452C5979A300EC68FD /* MuseumItem.swift in Sources */,
+				EA88954C2C558BD20032CF1D /* BaseCollectionReusableView.swift in Sources */,
+				EA88953C2C556FCE0032CF1D /* MuseumDepartamentModel.swift in Sources */,
+				EA06D0C72C5524AC0043138B /* MuseumObjectsProvider.swift in Sources */,
+				EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */,
+				EAD1E35E2C5FBFEB00107923 /* HomeDetailPresenter.swift in Sources */,
+				EAD1E35F2C5FBFEB00107923 /* HomeDetailRouter.swift in Sources */,
+				EAD1E3602C5FBFEB00107923 /* HomeDetailViewController.swift in Sources */,
+				EAD1E3612C5FBFEB00107923 /* HomeDetailInteractor.swift in Sources */,
+				EAD1E3622C5FBFEB00107923 /* HomeDetailConfigurator.swift in Sources */,
+				EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */,
+				EA06D0B12C54F87D0043138B /* WebService.swift in Sources */,
+				EA06D0C42C5523740043138B /* MuseumProvider.swift in Sources */,
+				EA06D09F2C54DFAE0043138B /* PlaceholderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +719,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,18 +731,21 @@
 		};
 		EA77A56E2C503FF500DA9457 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AA4293602FD32BED615CB8 /* Pods-MetropolitanMuseum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MetropolitanMuseum/Info.plist;
+				INFOPLIST_FILE = "MetropolitanMuseum/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,18 +761,21 @@
 		};
 		EA77A56F2C503FF500DA9457 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA5F980AA540D7664ACEA94 /* Pods-MetropolitanMuseum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MetropolitanMuseum/Info.plist;
+				INFOPLIST_FILE = "MetropolitanMuseum/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

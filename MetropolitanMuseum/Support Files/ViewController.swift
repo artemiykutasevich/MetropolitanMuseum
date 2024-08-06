@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// MARK: - ViewController
 
+class ViewController: UIViewController {
+    
+    // override
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        LogService.debugLog("\(className): viewed", prefix: .viewed)
     }
-
-
 }
-
