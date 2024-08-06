@@ -110,11 +110,6 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
     
     private func configureOutlets() {
         collectionView.collectionViewLayout = collectionViewLayout
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        
-        collectionView.registerHeader(HomeHeaderReusableView.self)
-        collectionView.register(HomeCollectionViewCell.self)
     }
     
     private func configureNavigationBar() {
@@ -122,52 +117,6 @@ final class HomeViewController: UIViewController, HomeViewProtocol {
         title = Defaults.titleText
     }
 }
-
-// MARK: - UICollectionViewDataSource
-
-extension HomeViewController: UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return presenter.getSectionsCount()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.getItemsCountFor(for: section)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: HomeCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let cell = cell as? HomeCollectionViewCell else { return }
-        let model: MuseumObjectModel = presenter.getItems(for: indexPath)
-        cell.configure(with: model)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let cell = cell as? HomeCollectionViewCell else { return }
-        cell.configureEmpty()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        switch kind {
-        case UICollectionView.elementKindSectionHeader:
-            let header: HomeHeaderReusableView = collectionView.dequeueHeader(forIndexPath: indexPath)
-            let sectionName: String = presenter.getSectionName(for: indexPath.section)
-            header.configure(titleText: sectionName)
-            return header
-        case UICollectionView.elementKindSectionFooter:
-            return UICollectionReusableView()
-        default:
-            return UICollectionReusableView()
-        }
-    }
-}
-
-// MARK: - UICollectionViewDelegate
-
-extension HomeViewController: UICollectionViewDelegate {}
 
 // MARK: - Defaults
 

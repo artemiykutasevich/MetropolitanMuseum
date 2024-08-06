@@ -53,6 +53,13 @@
 		EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */; };
 		EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */; };
 		EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */; };
+		EAD1E35E2C5FBFEB00107923 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */; };
+		EAD1E35F2C5FBFEB00107923 /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */; };
+		EAD1E3602C5FBFEB00107923 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */; };
+		EAD1E3612C5FBFEB00107923 /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */; };
+		EAD1E3622C5FBFEB00107923 /* HomeDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */; };
+		EAD1E3642C5FC07900107923 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */; };
+		EAD1E3682C5FDC2700107923 /* TimeInterval + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +112,13 @@
 		EAB6BF6F2C52EAD4000DE825 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EAB6BF712C52EAF3000DE825 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		EAB6BF732C52EB0C000DE825 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailConfigurator.swift; sourceTree = "<group>"; };
+		EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval + Extensions.swift"; sourceTree = "<group>"; };
 		F814E6B4450842082E3927F4 /* Pods_MetropolitanMuseum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolitanMuseum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -246,7 +260,6 @@
 				EA06D0CF2C5526580043138B /* MuseumObjectModel.swift */,
 				EA06D0CB2C5525A80043138B /* MuseumObjectsModel.swift */,
 				EA88953B2C556FCE0032CF1D /* MuseumDepartamentModel.swift */,
-				EA0AD7442C5979A300EC68FD /* MuseumItem.swift */,
 			);
 			path = MuseumModels;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 		EA0AD7432C5976C800EC68FD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA0AD7442C5979A300EC68FD /* MuseumItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,11 +329,12 @@
 		EA77A5722C50405600DA9457 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EA0AD7482C598CC200EC68FD /* Date + Extensions.swift */,
 				EA06D0AA2C54EBBE0043138B /* Int + Extensions.swift */,
+				EAD1E3672C5FDC2700107923 /* TimeInterval + Extensions.swift */,
 				EA06D0912C543B3F0043138B /* UICollectionView + Extensions.swift */,
 				EA06D0AC2C54EE3F0043138B /* UIView + Extensions.swift */,
 				EAB6BF682C52DA88000DE825 /* UIViewController + Extensions.swift */,
-				EA0AD7482C598CC200EC68FD /* Date + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 		EA77A5732C50405D00DA9457 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EA9E22A32C5D7A540023F17B /* HomeDetail */,
 				EAB6BF6A2C52DBE5000DE825 /* Home */,
 			);
 			path = Modules;
@@ -358,6 +374,19 @@
 				EA8895482C558A920032CF1D /* HomeHeaderReusableView.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		EA9E22A32C5D7A540023F17B /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1E35D2C5FBFEB00107923 /* HomeDetailConfigurator.swift */,
+				EAD1E35C2C5FBFEB00107923 /* HomeDetailInteractor.swift */,
+				EAD1E3592C5FBFEB00107923 /* HomeDetailPresenter.swift */,
+				EAD1E35A2C5FBFEB00107923 /* HomeDetailRouter.swift */,
+				EAD1E35B2C5FBFEB00107923 /* HomeDetailViewController.swift */,
+				EAD1E3632C5FC07900107923 /* HomeDetailViewController.xib */,
+			);
+			path = HomeDetail;
 			sourceTree = "<group>";
 		};
 		EAB6812C2C5D4B3000F1CC6B /* Cell */ = {
@@ -452,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD1E3642C5FC07900107923 /* HomeDetailViewController.xib in Resources */,
 				EA77A5662C503FF500DA9457 /* Assets.xcassets in Resources */,
 				EA8895492C558A920032CF1D /* HomeHeaderReusableView.xib in Resources */,
 				EA77A5692C503FF500DA9457 /* Base in Resources */,
@@ -532,6 +562,7 @@
 				EAB6BF6C2C52EAA0000DE825 /* HomeConfigurator.swift in Sources */,
 				EA06D0D22C552B680043138B /* Typealias.swift in Sources */,
 				EA0AD7492C598CC200EC68FD /* Date + Extensions.swift in Sources */,
+				EAD1E3682C5FDC2700107923 /* TimeInterval + Extensions.swift in Sources */,
 				EAB6BF702C52EAD4000DE825 /* HomePresenter.swift in Sources */,
 				EAB6BF742C52EB0C000DE825 /* HomeViewController.swift in Sources */,
 				EA77A5762C50434900DA9457 /* LogService.swift in Sources */,
@@ -545,6 +576,11 @@
 				EA88953C2C556FCE0032CF1D /* MuseumDepartamentModel.swift in Sources */,
 				EA06D0C72C5524AC0043138B /* MuseumObjectsProvider.swift in Sources */,
 				EAB6BF722C52EAF3000DE825 /* HomeRouter.swift in Sources */,
+				EAD1E35E2C5FBFEB00107923 /* HomeDetailPresenter.swift in Sources */,
+				EAD1E35F2C5FBFEB00107923 /* HomeDetailRouter.swift in Sources */,
+				EAD1E3602C5FBFEB00107923 /* HomeDetailViewController.swift in Sources */,
+				EAD1E3612C5FBFEB00107923 /* HomeDetailInteractor.swift in Sources */,
+				EAD1E3622C5FBFEB00107923 /* HomeDetailConfigurator.swift in Sources */,
 				EA06D0AD2C54EE3F0043138B /* UIView + Extensions.swift in Sources */,
 				EA06D0B12C54F87D0043138B /* WebService.swift in Sources */,
 				EA06D0C42C5523740043138B /* MuseumProvider.swift in Sources */,

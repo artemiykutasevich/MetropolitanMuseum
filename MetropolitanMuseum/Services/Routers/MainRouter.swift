@@ -11,6 +11,7 @@ import UIKit
 
 protocol MainRouterProtocol {
     func showHomeScreen()
+    func showDetailHomeScreen(with model: MuseumObjectModel, from presentedViewController: UIViewController)
 }
 
 // MARK: - MainRouter
@@ -30,5 +31,11 @@ extension MainRouter: MainRouterProtocol {
         let homeViewController = HomeConfigurator.instantiate()
         window.rootViewController = UINavigationController(rootViewController: homeViewController)
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
+    }
+    
+    func showDetailHomeScreen(with model: MuseumObjectModel, from presentedViewController: UIViewController) {
+        let homeDetailViewController = HomeDetailConfigurator.instantiate(with: model)
+        let homeDetailNavigationViewController = UINavigationController(rootViewController: homeDetailViewController)
+        presentedViewController.present(homeDetailNavigationViewController, animated: true)
     }
 }

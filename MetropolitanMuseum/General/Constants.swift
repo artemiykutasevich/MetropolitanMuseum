@@ -18,11 +18,15 @@ final class Constants {
         static let animationDuration: TimeInterval = 0.25
         
         static let placeholderImage: UIImage? = UIImage(systemName: "arrow.down.circle")?
-            .withConfiguration(UIImage.SymbolConfiguration(pointSize: 10))
             .withTintColor(.secondaryLabel, renderingMode: .alwaysOriginal)
         
         static let errorImage: UIImage? = UIImage(systemName: "photo")?
-            .withConfiguration(UIImage.SymbolConfiguration(pointSize: 10))
-            .withTintColor(.red.withAlphaComponent(0.7), renderingMode: .alwaysOriginal)
+            .withTintColor(.systemRed.withAlphaComponent(0.7), renderingMode: .alwaysOriginal)
+        
+        static let highlightedItemImage: UIImage? = UIImage(systemName: "star.fill")?
+            .withTintColor(.systemYellow, renderingMode: .alwaysOriginal)
+        
+        static let unhighlightedItemImage: UIImage? = UIImage(systemName: "star")?
+            .withTintColor(.systemYellow, renderingMode: .alwaysOriginal)
     }
 }

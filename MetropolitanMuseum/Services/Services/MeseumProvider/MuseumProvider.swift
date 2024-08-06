@@ -16,7 +16,7 @@ protocol MuseumProviderProtocol: MuseumObjectProviderProtocol, MuseumObjectsProv
 final class MuseumProvider: MuseumProviderProtocol {
     lazy var webService: WebServiceProtocol = serviceLocator.getService()
     
-    lazy var metadataDate: String = Date().getFormattedDate(format: dateFormat)
+    lazy var metadataDate: String = Date(timeInterval: -TimeInterval.oneDay, since: Date()).getFormattedDate(format: dateFormat)
     
     private let dateFormat: String = "YYYY-MM-dd"
 }

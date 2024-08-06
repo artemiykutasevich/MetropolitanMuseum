@@ -10,6 +10,7 @@ import Foundation
 // MARK: - HomeRouterProtocol
 
 protocol HomeRouterProtocol: AnyObject {
+    func handleSelect(_ model: MuseumObjectModel)
     func handleError(_ error: InternetError)
 }
 
@@ -22,6 +23,7 @@ final class HomeRouter: BaseClass {
     weak var viewController: HomeViewController!
     
     private lazy var alertRouter: AlertRouterProtocol = serviceLocator.getService()
+    private lazy var mainRouter: MainRouterProtocol = serviceLocator.getService()
     
     // Functions
     
@@ -33,6 +35,10 @@ final class HomeRouter: BaseClass {
 // MARK: - HomeRouterProtocol
 
 extension HomeRouter: HomeRouterProtocol {
+    func handleSelect(_ model: MuseumObjectModel) {
+        mainRouter.showDetailHomeScreen(with: model, from: viewController)
+    }
+    
     func handleError(_ error: InternetError) {
         switch error {
         case .noInternetConnection:

@@ -11,7 +11,7 @@ import Foundation
 
 struct MuseumObjectModel: Decodable {
     let objectID: Int
-//    let isHighlight: Bool
+    let isHighlight: Bool
 //    let accessionNumber: String
 //    let accessionYear: String
 //    let isPublicDomain: Bool
@@ -19,13 +19,13 @@ struct MuseumObjectModel: Decodable {
     let primaryImageSmall: String
 //    let additionalImages: [String]
 //    let constituents: [String: Any]
-//    let department: String
+    let department: String
 //    let objectName: String
-//    let title: String
-//    let culture: String
-//    let period: String
-//    let dynasty: String
-//    let reign: String
+    let title: String
+    let culture: String?
+    let period: String?
+    let dynasty: String?
+    let reign: String?
 //    let portfolio: String
 //    let artistRole: String
 //    let artistPrefix: String

@@ -31,6 +31,7 @@ extension LogService {
         case failure
         case web
         case viewed
+        case result
         case `default`
         
         var icon: String {
@@ -45,6 +46,8 @@ extension LogService {
                 return "✅"
             case .failure:
                 return "⛔️"
+            case .result:
+                return "ℹ️"
             }
         }
     }
